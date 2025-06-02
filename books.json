@@ -1,0 +1,428 @@
+{
+  "books": [
+    {
+      "title": "Dom Casmurro",
+      "author": "Machado de Assis",
+      "year": 1899,
+      "genre": "Realism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Memórias Póstumas de Brás Cubas",
+      "author": "Machado de Assis",
+      "year": 1881,
+      "genre": "Realism",
+      "language": "Portuguese",
+      "source": "Project Gutenberg"
+    },
+    {
+      "title": "O Alienista",
+      "author": "Machado de Assis",
+      "year": 1882,
+      "genre": "Short Story",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Quincas Borba",
+      "author": "Machado de Assis",
+      "year": 1891,
+      "genre": "Realism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Iracema",
+      "author": "José de Alencar",
+      "year": 1865,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "O Guarani",
+      "author": "José de Alencar",
+      "year": 1857,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Senhora",
+      "author": "José de Alencar",
+      "year": 1875,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Lucíola",
+      "author": "José de Alencar",
+      "year": 1862,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "O Cortiço",
+      "author": "Aluísio Azevedo",
+      "year": 1890,
+      "genre": "Naturalism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "O Mulato",
+      "author": "Aluísio Azevedo",
+      "year": 1881,
+      "genre": "Naturalism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Casa de Pensão",
+      "author": "Aluísio Azevedo",
+      "year": 1884,
+      "genre": "Naturalism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "A Normalista",
+      "author": "Adolfo Caminha",
+      "year": 1893,
+      "genre": "Naturalism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Bom-Crioulo",
+      "author": "Adolfo Caminha",
+      "year": 1895,
+      "genre": "Naturalism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "O Ateneu",
+      "author": "Raul Pompeia",
+      "year": 1888,
+      "genre": "Realism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "A Carne",
+      "author": "Júlio Ribeiro",
+      "year": 1888,
+      "genre": "Naturalism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Inocência",
+      "author": "Visconde de Taunay",
+      "year": 1872,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "A Escrava Isaura",
+      "author": "Bernardo Guimarães",
+      "year": 1875,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "O Seminarista",
+      "author": "Bernardo Guimarães",
+      "year": 1872,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Memórias de um Sargento de Milícias",
+      "author": "Manuel Antônio de Almeida",
+      "year": 1854,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "A Moreninha",
+      "author": "Joaquim Manuel de Macedo",
+      "year": 1844,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "A Luneta Mágica",
+      "author": "Joaquim Manuel de Macedo",
+      "year": 1869,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "O Sertanejo",
+      "author": "José de Alencar",
+      "year": 1875,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Til",
+      "author": "José de Alencar",
+      "year": 1872,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Ubirajara",
+      "author": "José de Alencar",
+      "year": 1874,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "A Pata da Gazela",
+      "author": "José de Alencar",
+      "year": 1870,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Sonhos d'Ouro",
+      "author": "José de Alencar",
+      "year": 1872,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "A Viuvinha",
+      "author": "José de Alencar",
+      "year": 1860,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Diva",
+      "author": "José de Alencar",
+      "year": 1864,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "A Guerra dos Mascates",
+      "author": "José de Alencar",
+      "year": 1873,
+      "genre": "Historical Novel",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "O Gaúcho",
+      "author": "José de Alencar",
+      "year": 1870,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "O Ermitão de Muquém",
+      "author": "Bernardo Guimarães",
+      "year": 1869,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "O Garimpeiro",
+      "author": "Bernardo Guimarães",
+      "year": 1872,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "O Índio Afonso",
+      "author": "Bernardo Guimarães",
+      "year": 1873,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "A Filha do Fazendeiro",
+      "author": "Bernardo Guimarães",
+      "year": 1872,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Rosaura, a Enjeitada",
+      "author": "Bernardo Guimarães",
+      "year": 1883,
+      "genre": "Romanticism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "O Coruja",
+      "author": "Aluísio Azevedo",
+      "year": 1890,
+      "genre": "Naturalism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "O Homem",
+      "author": "Aluísio Azevedo",
+      "year": 1887,
+      "genre": "Naturalism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "O Cortiço",
+      "author": "Aluísio Azevedo",
+      "year": 1890,
+      "genre": "Naturalism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "A Condessa Vésper",
+      "author": "Aluísio Azevedo",
+      "year": 1897,
+      "genre": "Naturalism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "O Livro de uma Sogra",
+      "author": "Aluísio Azevedo",
+      "year": 1895,
+      "genre": "Naturalism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "O Esqueleto",
+      "author": "Raul Pompeia",
+      "year": 1880,
+      "genre": "Realism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "As Joias da Coroa",
+      "author": "Raul Pompeia",
+      "year": 1883,
+      "genre": "Realism",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Canções Sem Metro",
+      "author": "Olavo Bilac",
+      "year": 1919,
+      "genre": "Poetry",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Poesias",
+      "author": "Olavo Bilac",
+      "year": 1888,
+      "genre": "Poetry",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Via Láctea",
+      "author": "Olavo Bilac",
+      "year": 1888,
+      "genre": "Poetry",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Sarças de Fogo",
+      "author": "Olavo Bilac",
+      "year": 1888,
+      "genre": "Poetry",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "O Caçador de Esmeraldas",
+      "author": "Olavo Bilac",
+      "year": 1902,
+      "genre": "Poetry",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Panóplias",
+      "author": "Olavo Bilac",
+      "year": 1917,
+      "genre": "Poetry",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Tarde",
+      "author": "Olavo Bilac",
+      "year": 1919,
+      "genre": "Poetry",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Crônicas e Novelas",
+      "author": "Machado de Assis",
+      "year": 1910,
+      "genre": "Short Stories",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Contos Fluminenses",
+      "author": "Machado de Assis",
+      "year": 1870,
+      "genre": "Short Stories",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Histórias da Meia-Noite",
+      "author": "Machado de Assis",
+      "year": 1873,
+      "genre": "Short Stories",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    },
+    {
+      "title": "Papéis Avulsos",
+      "author": "Machado de Assis",
+      "year": 1882,
+      "genre": "Short Stories",
+      "language": "Portuguese",
+      "source": "Domínio Público"
+    }
+  ]
+}
