@@ -1,251 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblioteca de Livros em Domínio Público Brasileiro</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding: 20px;
-            background-color: #2c3e50;
-            color: white;
-            border-radius: 5px;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-        .book-card {
-            background-color: white;
-            border-radius: 8px;
-            padding: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        .book-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        .book-title {
-            font-weight: bold;
-            font-size: 1.1em;
-            margin-bottom: 5px;
-            color: #2c3e50;
-        }
-        .book-author {
-            color: #7f8c8d;
-            margin-bottom: 10px;
-            font-style: italic;
-        }
-        .book-info {
-            font-size: 0.9em;
-            margin-bottom: 10px;
-            color: #555;
-        }
-        .buttons {
-            display: flex;
-            gap: 10px;
-            margin-top: 10px;
-        }
-        .btn {
-            padding: 5px 10px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.8em;
-            transition: background-color 0.3s;
-        }
-        .btn-primary {
-            background-color: #3498db;
-            color: white;
-        }
-        .btn-primary:hover {
-            background-color: #2980b9;
-        }
-        .btn-secondary {
-            background-color: #95a5a6;
-            color: white;
-        }
-        .btn-secondary:hover {
-            background-color: #7f8c8d;
-        }
-        .search-container {
-            margin-bottom: 20px;
-            display: flex;
-            gap: 10px;
-        }
-        #searchInput {
-            flex-grow: 1;
-            padding: 8px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        .filter-buttons {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-        .filter-btn {
-            padding: 5px 10px;
-            background-color: #ecf0f1;
-            border: 1px solid #bdc3c7;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .filter-btn.active {
-            background-color: #3498db;
-            color: white;
-            border-color: #2980b9;
-        }
-        .no-results {
-            text-align: center;
-            padding: 20px;
-            color: #7f8c8d;
-            font-style: italic;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Sistema Bibliotecário - Lista de Livros</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Biblioteca de Livros em Domínio Público Brasileiro</h1>
-        <p>50 obras clássicas da literatura brasileira disponíveis gratuitamente</p>
-    </div>
+  <div class="container">
+    <header>
+      <h1>Sistema Bibliotecário</h1>
+      <p class="subtitulo">Catálogo de Livros</p>
+    </header>
 
-    <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Pesquisar por título, autor ou gênero...">
-        <button class="btn btn-primary" onclick="searchBooks()">Buscar</button>
-    </div>
+    <section class="filtro">
+      <input type="text" id="filtroAutor" placeholder="Filtrar por autor..." oninput="filtrarLivros()">
+    </section>
 
-    <div class="filter-buttons">
-        <button class="filter-btn active" onclick="filterBooks('all')">Todos</button>
-        <button class="filter-btn" onclick="filterBooks('Romanticism')">Romantismo</button>
-        <button class="filter-btn" onclick="filterBooks('Realism')">Realismo</button>
-        <button class="filter-btn" onclick="filterBooks('Naturalism')">Naturalismo</button>
-        <button class="filter-btn" onclick="filterBooks('Poetry')">Poesia</button>
-        <button class="filter-btn" onclick="filterBooks('Short Story')">Contos</button>
-    </div>
+    <section class="conteudo">
+      <ul id="listaLivros">Carregando...</ul>
+    </section>
+  </div>
 
-    <div class="container" id="booksContainer">
-        <!-- Books will be loaded here by JavaScript -->
-    </div>
-
-    <script>
-        // Your JSON data
-        const booksData = {
-            "books": [
-                {
-                    "title": "Dom Casmurro",
-                    "author": "Machado de Assis",
-                    "year": 1899,
-                    "genre": "Realism",
-                    "language": "Portuguese",
-                    "source": "Domínio Público"
-                },
-                {
-                    "title": "Memórias Póstumas de Brás Cubas",
-                    "author": "Machado de Assis",
-                    "year": 1881,
-                    "genre": "Realism",
-                    "language": "Portuguese",
-                    "source": "Project Gutenberg"
-                },
-                // ... (include all your other books here)
-                // I'm showing just 2 for brevity, but you should include all 50
-                {
-                    "title": "Contos Fluminenses",
-                    "author": "Machado de Assis",
-                    "year": 1870,
-                    "genre": "Short Stories",
-                    "language": "Portuguese",
-                    "source": "Domínio Público"
-                }
-            ]
-        };
-
-        // Function to display books
-        function displayBooks(books) {
-            const container = document.getElementById('booksContainer');
-            container.innerHTML = '';
-
-            if (books.length === 0) {
-                container.innerHTML = '<div class="no-results">Nenhum livro encontrado com esses critérios.</div>';
-                return;
-            }
-
-            books.forEach(book => {
-                const bookCard = document.createElement('div');
-                bookCard.className = 'book-card';
-                bookCard.innerHTML = `
-                    <div class="book-title">${book.title}</div>
-                    <div class="book-author">${book.author}</div>
-                    <div class="book-info">${book.year} | ${book.genre}</div>
-                    <div class="book-info">Fonte: ${book.source}</div>
-                    <div class="buttons">
-                        <button class="btn btn-primary">Detalhes</button>
-                        <button class="btn btn-secondary">Fonte</button>
-                    </div>
-                `;
-                container.appendChild(bookCard);
-            });
-        }
-
-        // Search function
-        function searchBooks() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            const filteredBooks = booksData.books.filter(book => 
-                book.title.toLowerCase().includes(searchTerm) ||
-                book.author.toLowerCase().includes(searchTerm) ||
-                book.genre.toLowerCase().includes(searchTerm)
-            );
-            displayBooks(filteredBooks);
-        }
-
-        // Filter by genre
-        function filterBooks(genre) {
-            // Update active button
-            document.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.classList.remove('active');
-                if (btn.textContent === (genre === 'all' ? 'Todos' : 
-                                       genre === 'Romanticism' ? 'Romantismo' :
-                                       genre === 'Realism' ? 'Realismo' :
-                                       genre === 'Naturalism' ? 'Naturalismo' :
-                                       genre === 'Poetry' ? 'Poesia' :
-                                       genre === 'Short Story' ? 'Contos' : '')) {
-                    btn.classList.add('active');
-                }
-            });
-
-            if (genre === 'all') {
-                displayBooks(booksData.books);
-            } else {
-                const filteredBooks = booksData.books.filter(book => book.genre === genre);
-                displayBooks(filteredBooks);
-            }
-        }
-
-        // Initialize the page
-        document.addEventListener('DOMContentLoaded', () => {
-            displayBooks(booksData.books);
-            
-            // Make search work on Enter key
-            document.getElementById('searchInput').addEventListener('keyup', (e) => {
-                if (e.key === 'Enter') {
-                    searchBooks();
-                }
-            });
-        });
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>

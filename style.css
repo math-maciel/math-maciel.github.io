@@ -1,0 +1,109 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px 30px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.subtitulo {
+  color: #7f8c8d;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.filtro {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #ecf0f1;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 5px solid #2980b9;
+}
+
+li strong {
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+button {
+  margin-top: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #1c5980;
+}
+/* Botão */
+button {
+  margin-top: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #1c5980;
+}
+
+/* Estilo de livros reservados */
+li.reservado {
+  border-left: 5px solid #e74c3c;
+  background-color: #fbeaea;
+}
+
+.info-reservado {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 4px 8px;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 4px;
+  font-size: 13px;
+}
